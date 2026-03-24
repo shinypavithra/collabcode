@@ -41,7 +41,4 @@ const roomSchema = new mongoose.Schema(
   }
 );
 
-// Index for fast lookups
-roomSchema.index({ roomId: 1 });
-
 module.exports = mongoose.model("Room", roomSchema);
