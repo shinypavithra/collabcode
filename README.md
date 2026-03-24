@@ -50,7 +50,7 @@ cp server/.env.example server/.env
 | Variable     | Default                              | Description             |
 | ------------ | ------------------------------------ | ----------------------- |
 | `PORT`       | `5000`                               | Express server port     |
-| `MONGO_URI`  | `mongodb://localhost:27017/collabcode` | MongoDB connection URI |
+| `MONGO_URI`  | ``                                   | MongoDB connection URI |
 | `CLIENT_URL` | `http://localhost:3000`              | CORS allowed origin     |
 
 ### Running in development
