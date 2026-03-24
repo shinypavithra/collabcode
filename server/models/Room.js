@@ -36,7 +36,6 @@ const roomSchema = new mongoose.Schema(
     versions: { type: [versionSchema], default: [] },
   },
   {
-    // Use built-in Mongoose timestamps — no need to manage manually
     timestamps: true,
   }
 );
