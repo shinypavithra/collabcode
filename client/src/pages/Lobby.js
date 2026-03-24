@@ -25,10 +25,10 @@ const Lobby = ({ onJoin }) => {
       let id = roomId.trim().toUpperCase();
 
       if (mode === "create") {
-        const res = await axios.post("/api/rooms");
+        const res = await axios.post(`${process.env.REACT_APP_SOCKET_URL}/api/rooms`);
         id = res.data.roomId;
       } else {
-        const res = await axios.get(`/api/rooms/${id}`);
+       const res = await axios.get(`${process.env.REACT_APP_SOCKET_URL}/api/rooms/${id}`);
         if (!res.data.exists) {
           setError("Room not found. Check the ID or create a new room.");
           setLoading(false);
